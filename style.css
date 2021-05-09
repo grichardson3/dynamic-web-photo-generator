@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Bodoni XT";
+    src: url('fonts/BodoniXT.ttf');
+}
+
+@font-face {
+    font-family: "DJB Chalk It Up";
+    src: url('fonts/DJB_Chalk_It_Up.ttf');
+}
+
+body {
+    background: #eee;
+}
+
+#capture {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 1080px;
+    height: 1080px;
+}
+
+#quoteArea {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#quote {
+    width: 760px;
+}
+
+#levyGordo, #stopFreakin, #signature {
+    position: relative;
+}
+
+#levyGordo {
+    bottom: 0;
+}

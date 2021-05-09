@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="controls">
+        <h1>Text Template Creator</h1>
+        <label>Text Template Option</label>
+        <br><br>
+        <select id="templateSelector">
+            <option value="black">Black Template</option>
+            <option value="white">White Template</option>
+            <option value="chalk">Chalk Template</option>
+        </select>
+        <br><br>
+        <label>Text</label>
+        <br><br>
+        <input id="textInput" value="Lorem ipsum is placeholder text commonly used in the publishing industries."/>
+        <br><br>
+        <label>Text Size</label>
+        <br><br>
+        <input id="textSize" type="number" min="32" max="256"/> px
+        <br><br>
+        <label>Line Height</label>
+        <br><br>
+        <input id="lineHeight" type="number" min="0" max="5"/> pt
+        <br><br>
+        <button id="submitButton">Submit</button>
+    </div>
+    <div id="capture">
+        <div id="quoteArea">
+            <div id="quote">
+                <span>Lorem ipsum is placeholder text commonly used in publishing.</span>
+            </div>
+        </div>
+    </div>
+    <script src="html-canvas.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
