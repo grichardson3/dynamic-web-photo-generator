@@ -7,6 +7,16 @@ const template = document.querySelector("#capture");
 const quoteArea = document.querySelector("#quoteArea");
 const quote = document.querySelector("#quote");
 
+const download = document.getElementById('download');
+
+download.addEventListener('click', function(e) {
+    var link = document.createElement('a');
+    link.download = 'download.png';
+    link.href = document.querySelector("#canvasElement").toDataURL();
+    link.click();
+    link.delete;
+});
+
 quoteArea.style.fontSize = "78px";
 quoteArea.style.lineHeight = 1.2;
 quoteArea.style.marginBottom = ((770 - quoteArea.clientHeight) / 2) + "px";

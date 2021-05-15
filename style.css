@@ -13,6 +13,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+    font-weight: 700;
+}
+
 select {
     font-family: 'Roboto', sans-serif;
 }
@@ -29,6 +33,7 @@ select {
 
 #container {
     padding: 20px 30px;
+    width: 100%;
 }
 
 #quoteArea {
@@ -46,4 +51,8 @@ select {
 
 #levyGordo {
     bottom: 0;
+}
+
+#textSize, #lineHeight {
+    width: 100px;
 }
