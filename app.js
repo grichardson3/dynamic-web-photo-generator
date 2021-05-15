@@ -1,3 +1,5 @@
+window.scrollTo(0, 0); // Must scroll to the top to prevent issues with canvas render
+
 const selector = document.querySelector("#templateSelector");
 const inputField = document.querySelector("#textInput");
 const textSize = document.querySelector("#textSize");
@@ -11,7 +13,7 @@ const download = document.getElementById('download');
 
 download.addEventListener('click', function(e) {
     var link = document.createElement('a');
-    link.download = 'download.png';
+    link.download = `${(inputField.value).replace(/[^a-zA-Z ]/g, "")}.png`; // RegEx removes special characters from file name so that it can be zipped
     link.href = document.querySelector("#canvasElement").toDataURL();
     link.click();
     link.delete;
@@ -82,6 +84,7 @@ selector.addEventListener("change", () => {
 });
 
 submitButton.addEventListener("click", () => {
+    window.scrollTo(0, 0); // Must scroll to the top to prevent issues with canvas render
     quote.textContent = inputField.value;
 
     document.body.removeChild(document.querySelector("#canvasElement"));
