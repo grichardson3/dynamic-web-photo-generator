@@ -10,6 +10,11 @@
 
 body {
     background: #eee;
+    font-family: 'Roboto', sans-serif;
+}
+
+select {
+    font-family: 'Roboto', sans-serif;
 }
 
 #capture {
@@ -20,6 +25,10 @@ body {
     padding: 0;
     width: 1080px;
     height: 1080px;
+}
+
+#container {
+    padding: 20px 30px;
 }
 
 #quoteArea {
